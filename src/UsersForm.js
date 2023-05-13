@@ -7,7 +7,8 @@ export class UsersForm extends Component {
     this.state = {
       name: "",
       email: "",
-      gen: ""
+      gen: "",
+      id: " "
     }
   } 
   
@@ -38,7 +39,6 @@ export class UsersForm extends Component {
             <label htmlFor="exampleInputGen">Gen</label>
             <input type="text" className="form-control" id="exampleInputText" placeholder="Enter Gen" name='gen' onChange={this.handlechange} value={this.state.gen}/>
           </div>
-      
           <button type="submit" className="btn btn-primary">Submit</button>
         </form>
       </div>

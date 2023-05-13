@@ -9,7 +9,7 @@ class User extends Component {
           <div className='row'>
           {this.props.array.map((contact, index) => {
           return (
-            <Person you={contact} />
+            <Person you={contact} delete={this.props.delete} editUser={this.props.editUser} />
           );
         })}
           </div>
